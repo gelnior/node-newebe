@@ -24,18 +24,19 @@
     "path-extra": "0.2.1"
   },
   "devDependencies": {
-    "should": "3.1.2",
+    "chai": "^1.9.1",
     "mocha": "1.17.1",
     "request-json": "0.4.6",
     "cozy-fixtures": "1.1.0",
-    "coffeelint": "1.1.0"
+    "coffeelint": "1.1.0",
+    "coffee-script": "^1.8.0"
   },
   "scripts": {
     "lint-server": "coffeelint -r server server.coffee",
     "build": "cd client && brunch b",
+    "test": "mocha --compilers coffee:coffee-script/register tests/*.coffee",
     "start": "coffee server.coffee"
   },
-  "cozy-permissions": {
-  },
+  "cozy-permissions": {},
   "cozy-displayName": "Newebe"
 }
