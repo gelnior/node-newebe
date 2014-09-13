@@ -1,0 +1,31 @@
+#navigation
+    background: black
+    box-shadow: -3px 2px 3px #AAA + 20%
+    height: 38px
+
+    li
+        a
+            border: 0
+            font-weight: bold
+            color: white
+            background-color: black
+            transition: background-color 200ms linear
+            cursor: pointer
+            text-shadow: 0 0 0 #FFF
+
+        a:hover
+            color: #444
+            font-weight: bold
+            text-decoration: none
+            text-shadow: 0 0 0 #FFF
+            background-color: purple
+            transition: background-color 200ms linear
+            color: white
+
+        a.active
+            background-color: #DEF
+            transition: background-color 200ms linear
+            color: #DEF - 80%
+
+    li#responsive-menu
+        display: none
