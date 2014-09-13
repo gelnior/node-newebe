@@ -32,6 +32,7 @@
   },
   "scripts": {
     "lint-server": "coffeelint -r server server.coffee",
+    "build": "cd client && brunch b",
     "start": "node build/server.js"
   },
   "cozy-permissions": {
